@@ -1,11 +1,13 @@
 package com.k9b9.demorest;
 
-import java.sql.Timestamp;
+import java.util.Calendar;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Notes {
@@ -14,7 +16,8 @@ public class Notes {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String note;
-    private Timestamp date;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Calendar date = Calendar.getInstance();
 
     /**
      * @return the id
@@ -47,15 +50,15 @@ public class Notes {
     /**
      * @return the date
      */
-    public Timestamp getDate() {
+    public Calendar getDate() {
         return date;
     }
 
     /**
      * @param date the date to set
      */
-    public void setDate(Timestamp date) {
+    public void setDate(Calendar date) {
         this.date = date;
     }
-    
+
 }
