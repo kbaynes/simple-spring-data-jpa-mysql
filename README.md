@@ -1,7 +1,9 @@
-# Simple Spring Data JPA (REST) on MySQL
+# Simple Spring Data JPA (REST) on MySQL (or H2)
 
 ## Overview
 This project creates a Spring Boot executable JAR which connects to a MySQL database and exposes that database via a RESTful interface. It is intended to be used in conjunction with the [ec2-l2-java-mariadb](https://github.com/kbaynes/ec2-l2-java-mariadb) project (which sets up a Java+MariaDB instance on AWS in less than 5 minutes), but may be used standalone. See 'To Run Locally', below. It demonstrates the power of [Spring Data JPA](https://spring.io/projects/spring-data-jpa) by creating an entire HATEOAS (REST) interface with 3 java files, and only a few lines of code. The Notes.java entity class is the largest file, but 90% of that was auto-generated from the class fields. The NotesRepository.java class is almost empty.
+
+Checkout the 'h2' branch for a local development setup using the H2 in memory database. This is the simplest way to prototype.
 
 ## Goal
 The goal of this project is to create a [Spring Boot](https://spring.io/projects/spring-boot) application, which uses [Spring HATEOAS](https://spring.io/projects/spring-hateoas) and [Spring Data JPA](https://spring.io/projects/spring-data-jpa). This means you get an executable JAR which exposes a REST API automatically.
