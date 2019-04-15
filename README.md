@@ -1,4 +1,4 @@
-# Simple Spring Data JPA (REST) on H2
+# Simple Spring Data JPA (REST) on H2 In-Memory DB
 
 ## Overview
 This project creates a Spring Boot executable JAR which connects to an in-memory H2 database and exposes that database via a RESTful interface. It is intended to be run locally for quick prototyping, as the database is re-initialized on application load. It demonstrates the power of [Spring Data JPA](https://spring.io/projects/spring-data-jpa) by creating an entire HATEOAS (REST) interface with 3 java files, and only a few lines of code. The Notes.java entity class is the largest file, but 90% of that was auto-generated from the class fields. The NotesRepository.java class (which provides the entire Notes REST API) is almost empty. Via the API, you can Create, Read, Update and Delete rows in the Notes table.
