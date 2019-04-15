@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.k9b9</groupId>
 	<artifactId>simple-spring-data-jpa-mysql</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>simple-spring-data-jpa-mysql</name>
 	<description>Simple Spring Boot, Spring Data JPA REST API on MySQL</description>
 
